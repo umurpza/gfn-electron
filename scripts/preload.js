@@ -1,6 +1,4 @@
-// All of the Node.js APIs are available in the preload process.
-// It has the same sandbox as a Chrome extension.
-
+//  All the Node.js APIs are available in the preload process. It has the same sandbox as a Chrome extension.
 window.addEventListener("DOMContentLoaded", () => {
   const replaceText = (selector, text) => {
     const element = document.getElementById(selector);
@@ -42,7 +40,7 @@ window.addEventListener("DOMContentLoaded", () => {
     });
 
     // If let unchecked it will report the kernel version
-    // as a windows version.
+    // as a Windows version.
     // 6.1.2 (linux) < 10.0.19041+ (Windows)
     // Minimum supported is 8+
     Object.defineProperty(navigator, "userAgentData", {

@@ -1,7 +1,7 @@
-const { app, globalShortcut, BrowserWindow, session } = require('electron');
-const path = require('path');
-const { DiscordRPC } = require('./rpc.js');
-const { switchFullscreenState } = require('./windowManager.js');
+const { app, globalShortcut, BrowserWindow, session } = require("electron");
+const path = require("path");
+const { DiscordRPC } = require("./rpc.js");
+const { switchFullscreenState } = require("./windowManager.js");
 
 const homePage = "https://play.geforcenow.com";
 
@@ -54,12 +54,12 @@ async function createWindow() {
   });
 
   if (process.argv.includes("--direct-start")) {
-    mainWindow.loadURL(
+    await mainWindow.loadURL(
       "https://play.geforcenow.com/mall/#/streamer?launchSource=GeForceNOW&cmsId=" +
         process.argv[process.argv.indexOf("--direct-start") + 1],
     );
   } else {
-    mainWindow.loadURL(homePage);
+    await mainWindow.loadURL(homePage);
   }
 
   /*
@@ -105,7 +105,7 @@ app.whenReady().then(async () => {
   });
 
   globalShortcut.register("Alt+Home", async () => {
-    BrowserWindow.getAllWindows()[0].loadURL(homePage);
+    await BrowserWindow.getAllWindows()[0].loadURL(homePage);
   });
 
   globalShortcut.register("F4", async () => {
@@ -117,7 +117,7 @@ app.whenReady().then(async () => {
   });
 
   globalShortcut.register("Esc", async () => {
-    var window = BrowserWindow.getAllWindows()[0];
+    const window = BrowserWindow.getAllWindows()[0];
 
     window.webContents.sendInputEvent({
       type: "keyDown",
