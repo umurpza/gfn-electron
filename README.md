@@ -1,4 +1,4 @@
-[![Donate](https://img.shields.io/badge/-%E2%99%A5%20Donate-%23ff69b4)](https://hmlendea.go.ro/fund.html) [![Build Status](https://github.com/hmlendea/gfn-electron/actions/workflows/node.js.yml/badge.svg)](https://github.com/hmlendea/gfn-electron/actions/workflows/node.js.yml) [![Latest GitHub release](https://img.shields.io/github/v/release/hmlendea/gfn-electron)](https://github.com/hmlendea/gfn-electron/releases/latest)
+[![Donate](https://img.shields.io/badge/-%E2%99%A5%20Donate-%23ff69b4)](https://venmo.com/u/zjmurphy12) [![Build Status](https://github.com/umurpza/gfn-electron/actions/workflows/node.js.yml/badge.svg)](https://github.com/umurpza/gfn-electron/actions/workflows/node.js.yml) [![Latest GitHub release](https://img.shields.io/github/v/release/hmlendea/gfn-electron)](https://github.com/umurpza/gfn-electron/releases/latest)
 
 # About
 
@@ -16,25 +16,25 @@ This project and its contributors are not affiliated with Nvidia, nor it's GeFor
 
 ## Manual Installation
 
- - Go to the [latest release](https://github.com/hmlendea/gfn-electron/releases/latest).
+ - Go to the [latest release](https://github.com/umurpza/gfn-electron/releases/latest).
  - Download the specific file that best fits your disto.
 
 ***Note**: Manual installations are possible but not supported. Please use the flatpak version if you have any trouble with the manual installation!*
 
 # Usage
 
- - [Basic usage](https://github.com/hmlendea/gfn-electron/wiki/Basic-usage)
-   - [Keyboard shortcuts](https://github.com/hmlendea/gfn-electron/wiki/Basic-usage#keyboard-shortcuts)
-   - [Command-line arguments](https://github.com/hmlendea/gfn-electron/wiki/Basic-usage#command-line-arguments)
-   - [Changing the keyboard layout](https://github.com/hmlendea/gfn-electron/wiki/Basic-usage#changing-the-keyboard-layout)
-   - [Directly launching a game from the desktop](https://github.com/hmlendea/gfn-electron/wiki/Basic-usage#directly-launching-a-game-from-the-desktop)
- - [Integrations](https://github.com/hmlendea/gfn-electron/wiki/Integrations)
-   - [Discord](https://github.com/hmlendea/gfn-electron/wiki/Integrations#discord)
-     - [Using native GFN + flatpak Discord](https://github.com/hmlendea/gfn-electron/wiki/Integrations#using-native-gfn--flatpak-discord)
-     - [Disabling the Discord RPC](https://github.com/hmlendea/gfn-electron/wiki/Integrations#disabling-the-discord-rpc)
- - [Troubleshooting](https://github.com/hmlendea/gfn-electron/wiki/Troubleshooting)
-   - [Gamepad controls are not detected](https://github.com/hmlendea/gfn-electron/wiki/Troubleshooting#gamepad-controls-are-not-detected)
-   - [Steam Deck controls are not detected](https://github.com/hmlendea/gfn-electron/wiki/Troubleshooting#steam-deck-controls-are-not-detected)
+ - [Basic usage](https://github.com/umurpza/gfn-electron/wiki/Basic-usage)
+   - [Keyboard shortcuts](https://github.com/umurpza/gfn-electron/wiki/Basic-usage#keyboard-shortcuts)
+   - [Command-line arguments](https://github.com/umurpza/gfn-electron/wiki/Basic-usage#command-line-arguments)
+   - [Changing the keyboard layout](https://github.com/umurpza/gfn-electron/wiki/Basic-usage#changing-the-keyboard-layout)
+   - [Directly launching a game from the desktop](https://github.com/umurpza/gfn-electron/wiki/Basic-usage#directly-launching-a-game-from-the-desktop)
+ - [Integrations](https://github.com/umurpza/gfn-electron/wiki/Integrations)
+   - [Discord](https://github.com/umurpza/gfn-electron/wiki/Integrations#discord)
+     - [Using native GFN + flatpak Discord](https://github.com/umurpza/gfn-electron/wiki/Integrations#using-native-gfn--flatpak-discord)
+     - [Disabling the Discord RPC](https://github.com/umurpza/gfn-electron/wiki/Integrations#disabling-the-discord-rpc)
+ - [Troubleshooting](https://github.com/umurpza/gfn-electron/wiki/Troubleshooting)
+   - [Gamepad controls are not detected](https://github.com/umurpza/gfn-electron/wiki/Troubleshooting#gamepad-controls-are-not-detected)
+   - [Steam Deck controls are not detected](https://github.com/umurpza/gfn-electron/wiki/Troubleshooting#steam-deck-controls-are-not-detected)
 
 # Building from source
 
@@ -47,7 +47,7 @@ You will need to install [npm](https://www.npmjs.com/), the Node.js package mana
 Once you have npm, clone the wrapper to a convenient location:
 
 ```bash
-git clone https://github.com/hmlendea/gfn-electron.git
+git clone https://github.com/umurpza/gfn-electron.git
 ```
 
 ## Building
@@ -73,5 +73,5 @@ npm install
  - [GeForce NOW](https://nvidia.com/en-eu/geforce-now)
  - [FlatHub release](https://flathub.org/apps/details/io.github.hmlendea.geforcenow-electron)
  - [FlatHub repository](https://github.com/flathub/io.github.hmlendea.geforcenow-electron)
- - [Basic usage](https://github.com/hmlendea/gfn-electron/wiki/Basic-usage)
- - [Troubleshooting](https://github.com/hmlendea/gfn-electron/wiki/Troubleshooting)
+ - [Basic usage](https://github.com/umurpza/gfn-electron/wiki/Basic-usage)
+ - [Troubleshooting](https://github.com/umurpza/gfn-electron/wiki/Troubleshooting)

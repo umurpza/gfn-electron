@@ -1,5 +1,6 @@
 {
   "name": "geforcenow-electron",
+  "packageManager": "yarn@3.6.2",
   "appId": "com.github.hmlendea.${name}",
   "productName": "GeForce NOW",
   "version": "1.13.0",
