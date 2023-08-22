@@ -1,0 +1,41 @@
+name: Create Release
+
+on:
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  release:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Use Node.js 16.x
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16.x
+          cache: 'npm'
+      - name: Install dependencies
+        run: npm install
+      - name: Build
+        run: npm run build --if-present
+      - name: Build
+        run: ls dist/
+
+      - name: Build and generate assets  # This is just a placeholder; replace with your actual build steps
+        run: |
+          echo "Building your project..."
+          # Your build commands here
+          echo "Hello World" > sample_asset.txt  # Generating a sample text file for demonstration
+
+      - name: Create Release
+        id: create_release
+        uses: ncipollo/release-action@v1
+        with:
+          artifacts: "dist/*.zip"   # path to the assets you want to upload
+          token: ${{ env.GITHUB_TOKEN }}
+          draft: true
+          prerelease: false
+          title: "Release for ${{ github.sha }}"
+          tag: "test"
+          body: "Release for ${{ github.sha }}"

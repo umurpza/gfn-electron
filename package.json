@@ -1,7 +1,7 @@
 {
   "name": "geforcenow-electron",
   "packageManager": "yarn@3.6.2",
-  "appId": "com.github.hmlendea.${name}",
+  "appId": "com.github.umurpza.${name}",
   "productName": "GeForce NOW",
   "version": "1.13.0",
   "description": "A Linux desktop web app for GeForce NOW",
@@ -21,17 +21,17 @@
       "artifactName": "${name}_${version}_linux.${ext}"
     },
     "extraFiles": [
-      "com.github.hmlendea.${name}.desktop"
+      "com.github.umurpza.${name}.desktop"
     ]
   },
-  "repository": "https://github.com/hmlendea/gfn-electron",
+  "repository": "https://github.com/umurpza/gfn-electron",
   "keywords": [
     "Electron",
     "gfn",
     "geforcenow",
     "geforce-now"
   ],
-  "author": "Horațiu Mlendea <Horatiu.Mlendea@ProtonMail.com>",
+  "author": "Zach Murphy <fearlesspixeldev@gmail.com>",
   "license": "GPL-3.0",
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^6.1.0",
