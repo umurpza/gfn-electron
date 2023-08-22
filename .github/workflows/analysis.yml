@@ -9,7 +9,7 @@
 # the `language` matrix defined below to confirm you have the correct set of
 # supported CodeQL languages.
 #
-name: "CodeQL"
+name: "CodeQL Analysis"
 
 on:
   push:
@@ -19,14 +19,15 @@ on:
     - cron: '40 13 * * 5'
 
 jobs:
-  analyze:
-    name: Analyze
+  analysis:
+    name: Analysis
     runs-on: ubuntu-latest
     permissions:
       actions: read
       contents: read
       security-events: write
-
+    env:
+      GITHUB_RUN_ATTEMPT: ${{ github.run_attempt || '1' }}
     strategy:
       fail-fast: false
       matrix:
@@ -37,6 +38,12 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v3
+
+    - name: Use Node.js 16.x
+      uses: actions/setup-node@v3
+      with:
+        node-version: 16.x
+        cache: 'npm'
 
     # Initializes the CodeQL tools for scanning.
     - name: Initialize CodeQL
