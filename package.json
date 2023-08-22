@@ -34,8 +34,18 @@
   "author": "Horațiu Mlendea <Horatiu.Mlendea@ProtonMail.com>",
   "license": "GPL-3.0",
   "devDependencies": {
-    "electron": "^25.5.0",
-    "electron-builder": "^24.6.3"
+    "@typescript-eslint/eslint-plugin": "^6.1.0",
+    "electron": "26.0.0",
+    "electron-builder": "^24.6.3",
+    "eslint": "^8.0.1",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-config-standard-with-typescript": "latest",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0 || ^16.0.0 ",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "prettier": "^3.0.2",
+    "typescript": "*"
   },
   "dependencies": {
     "discord-rich-presence": "^0.0.8"
